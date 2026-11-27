@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHBangles • Handcrafted Royal Bangles & Women's Jewellery</title>
+  <meta name="description" content="AHBangles by Sindhu Arun - Bengaluru. Exquisite traditional, bridal, kundan, glass, gold-plated, and designer bangles. Every bangle tells a beautiful story.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%23d4af37' stroke-width='6'/><circle cx='50' cy='50' r='34' fill='none' stroke='%23720e24' stroke-width='4'/><circle cx='50' cy='12' r='6' fill='%23e11d48'/><circle cx='50' cy='88' r='6' fill='%23e11d48'/><circle cx='12' cy='50' r='6' fill='%23e11d48'/><circle cx='88' cy='50' r='6' fill='%23e11d48'/></svg>" type="image/svg+xml">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              50: '#fdf2f4',
+              100: '#fbe6e9',
+              200: '#f6ced5',
+              600: '#9e1332',
+              700: '#720e24',
+              800: '#5a0d1e',
+              900: '#430814',
+              950: '#28030b'
+            },
+            rosegold: {
+              100: '#fdf0f2',
+              200: '#fae1e5',
+              300: '#f4c2c9',
+              400: '#e8a1ab',
+              500: '#b76e79',
+              600: '#9c525d',
+              700: '#7f3c46'
+            },
+            gold: {
+              100: '#fef9c3',
+              200: '#fef08a',
+              300: '#fde047',
+              400: '#facc15',
+              500: '#d4af37',
+              600: '#b45309',
+              700: '#92400e'
+            },
+            cream: {
+              50: '#fffbf5',
+              100: '#fdf6ed',
+              200: '#faebd7'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            script: ['"Great Vibes"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/custom.css">
+
+  <!-- React 18 & ReactDOM 18 -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Babel Standalone for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Canvas Confetti for Payment Celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Razorpay Checkout SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body class="bg-[#fff9fa] text-gray-800 antialiased selection:bg-rose-200 selection:text-maroon-800">
+  <div id="root">
+    <!-- Initial Loading State -->
+    <div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-cream-50 via-rose-50 to-pink-100">
+      <div class="relative w-24 h-24 mb-6">
+        <div class="absolute inset-0 rounded-full border-4 border-gold-500/30 animate-ping"></div>
+        <div class="w-24 h-24 rounded-full border-4 border-maroon-700 border-t-gold-500 animate-spin flex items-center justify-center">
+          <span class="text-2xl font-serif text-maroon-700 font-bold">AH</span>
+        </div>
+      </div>
+      <h2 class="text-2xl font-serif font-bold text-maroon-800 tracking-wide">AHBangles</h2>
+      <p class="text-xs uppercase tracking-widest text-rosegold-600 mt-2">Every Bangle Tells a Beautiful Story</p>
+      <p class="text-xs text-gray-400 mt-6">Loading curated royal bangles collection...</p>
+    </div>
+  </div>
+
+  <!-- Main React App -->
+  <script type="text/babel" src="/js/app.js"></script>
+</body>
+</html>

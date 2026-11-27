@@ -1,0 +1,119 @@
+/* AHBangles Custom Styles & Traditional Indian Luxury Theme */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap');
+
+:root {
+  --color-maroon: #720e24;
+  --color-maroon-dark: #4d0918;
+  --color-rose-gold: #c6858e;
+  --color-rose-gold-light: #e8c5ca;
+  --color-gold: #d4af37;
+  --color-gold-light: #fae084;
+  --color-pink-soft: #fff0f3;
+  --color-pink-accent: #f43f5e;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #27272a;
+  background-color: #fffafb;
+  overflow-x: hidden;
+}
+
+.font-serif-royal {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Shimmer and Gold Gradients */
+.bg-gradient-royal {
+  background: linear-gradient(135deg, #720e24 0%, #9e1332 50%, #520919 100%);
+}
+
+.bg-gradient-rosegold {
+  background: linear-gradient(135deg, #fff0f3 0%, #fae1e5 50%, #f4c2c9 100%);
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #d4af37 50%, #b45309 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #b45309 0%, #d4af37 50%, #92400e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-royal {
+  background: linear-gradient(135deg, #720e24 0%, #be123c 50%, #4d0918 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Indian Royal Mandala / Border Motif */
+.bangle-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -10px rgba(114, 14, 36, 0.15);
+}
+
+/* Floating animation for WhatsApp badge */
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e8c5ca;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c6858e;
+}
+
+/* Bangle measurement ring visualization */
+.bangle-ring {
+  border-radius: 50%;
+  border: 4px solid #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(circle, rgba(255, 240, 243, 0.8) 0%, rgba(255, 255, 255, 0.2) 70%);
+}
+
+.bangle-ring::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px dashed #b76e79;
+}
